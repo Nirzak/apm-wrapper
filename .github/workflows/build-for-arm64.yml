@@ -1,10 +1,6 @@
 name: Build for arm64
 
-on:
-  push:
-    branches: [ "arm64" ]
-  pull_request:
-    branches: [ "arm64" ]
+on: workflow_dispatch
 
 jobs:
   build:
