@@ -1,15 +1,13 @@
 # wrapper
-A tool to decrypt Apple Music's music. An active subscription is still needed.
+A tool to decrypt Apple Music's songs. An active subscription is still needed.
 
-Only support Linux x86_64 and arm64.
+Only support arm64. for x86_64 support check zhaarey's repo here: https://github.com/zhaarey/wrapper
 
 # Install
-Get the pre-built version from this project's Actions. 
-
-Or you can refer to the Actions configuration file for compilation.
+Get the pre-built version from this project's Releases. 
 
 # Docker
-Available for x86_64 and arm64. Need to download prebuilt version from releases or actions.
+Available for arm64. Need to download prebuilt version from releases or actions.
 
 Build image: `docker build --tag wrapper .`
 
