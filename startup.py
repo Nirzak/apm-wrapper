@@ -72,9 +72,10 @@ def read_output(process):
                 process.stdin.flush()
 
 def main():
+    cwd = os.getcwd() # getting current path
     try:
         # Change to wrapper directory
-        os.chdir("wrapper")
+        os.chdir(cwd)
         
         # Get credentials
         credentials = get_credentials()
