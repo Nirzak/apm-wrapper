@@ -29,7 +29,7 @@ def background_process(log_file):
         os.dup2(log.fileno(), sys.stderr.fileno())
 
 def read_output(process):
-    m3u8_seen = False
+    response_seen = False
     while True:
         line = process.stdout.readline()
         if not line and process.poll() is not None:
@@ -39,7 +39,7 @@ def read_output(process):
             line = line.decode('utf-8', errors='replace').strip()
             
             # Print to console only before backgrounding
-            if not m3u8_seen:
+            if not response_seen:
                 print(f"[{timestamp}] {line}")
             
             log_output(timestamp, line)
@@ -52,8 +52,8 @@ def read_output(process):
                 process.terminate()
                 sys.exit(1)
             
-            if "listening m3u8 request on" in line and not m3u8_seen:
-                m3u8_seen = True
+            if "response type 6" in line and not response_seen:
+                response_seen = True
                 print("\nService is ready. Moving to background...")
                 sys.stdout.flush()
                 
