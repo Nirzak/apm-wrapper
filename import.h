@@ -208,7 +208,7 @@ void setFairPlayDirectoryPath(struct shared_ptr *reqCtx, const char *str)
     _ZN17storeservicescore14RequestContext24setFairPlayDirectoryPathERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE(reqCtx->obj, &strBuf);
 }
 
-const char *const android_id = "dc28071e981c439e";
+const char *const android_id = "f39a6c2e8b1d4f7a";
 
 // --- interface ---
 extern void _ZNSt6__ndk110shared_ptrIN20androidstoreservices28AndroidPresentationInterfaceEE11make_sharedIJEEES3_DpOT_(struct shared_ptr *);
