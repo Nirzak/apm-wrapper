@@ -18,7 +18,6 @@
 *.pch
 
 # Libraries
-*.lib
 *.a
 *.la
 *.lo
@@ -64,7 +63,6 @@ dkms.conf
 *.pch
 
 # Compiled Dynamic libraries
-*.so
 *.dylib
 *.dll
 
@@ -76,14 +74,12 @@ dkms.conf
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
 *.out
 *.app
 
-rootfs/
 .vscode/
 wrapper
 rootfs/system/bin/linker64
