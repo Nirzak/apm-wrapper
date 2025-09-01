@@ -1,10 +1,10 @@
 # wrapper
 A tool to decrypt Apple Music's songs. An active subscription is still needed.
 
-Only support arm64. for x86_64 support check zhaarey's repo here: https://github.com/zhaarey/wrapper
+Only support arm64. for x86_64 support check WorldObservationLog's repo here: [https://github.com/WorldObservationLog/wrapper](https://github.com/WorldObservationLog/wrapper)
 
 # Install
-Get the pre-built version from this project's Releases. 
+Get the pre-built version from this project's Releases here: https://github.com/Nirzak/apm-wrapper/releases/latest 
 
 # Docker
 Available for arm64. Need to download prebuilt version from releases or actions.
@@ -25,8 +25,9 @@ Usage: wrapper [OPTION]...
   -D, --decrypt-port=INT    (default=`10020')
   -M, --m3u8-port=INT       (default=`20020')
   -P, --proxy=STRING        (default=`')
-  -L, --login=STRING        (username:password)
+  -L, --login=STRING      username:password
   -F, --code-from-file      (default=off)
+  -B, --base-dir=STRING   (default=`/data/data/com.apple.android.music/files')
 ```
 
 # Special thanks
