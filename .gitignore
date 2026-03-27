@@ -18,12 +18,15 @@
 *.pch
 
 # Libraries
+*.lib
 *.a
 *.la
 *.lo
 
 # Shared objects (inc. Windows DLLs)
 *.dll
+*.so
+*.so.*
 *.dylib
 
 # Executables
@@ -63,6 +66,7 @@ dkms.conf
 *.pch
 
 # Compiled Dynamic libraries
+*.so
 *.dylib
 *.dll
 
@@ -74,13 +78,19 @@ dkms.conf
 *.lai
 *.la
 *.a
+*.lib
 
 # Executables
 *.exe
 *.out
 *.app
 
+rootfs/
 .vscode/
 wrapper
 rootfs/system/bin/linker64
 build/
+
+# Enviroment Variables
+.env
+!.env.example
